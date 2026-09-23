@@ -13,7 +13,7 @@ Responsive static website for Cleaning Crowned in New Jersey. The luxury visual 
 - `site.js` — mobile navigation, service preselection and Formspree success/error handling.
 
 ## Launch checklist (important)
-1. Confirm that `(201) 759-8569`, `cleaningcrownedvip@gmail.com`, and West New York are current company contact details. **Do not change the live email until the business creates and confirms its replacement.**
+1. Confirmed website contact details supplied by the owner: `+1 (551) 449-2066`, `cleaningcrownedvip@gmail.com`, and `Clifton, NJ`. Formspree notification recipient remains independently managed in the Formspree account.
 2. Netlify is used for **hosting only**. The quote form uses the supplied Formspree endpoint (`https://formspree.io/f/xbglyayz`). Its JavaScript submission waits for a successful Formspree response before redirecting to `thank-you.html`; errors display a retry message without losing the entered fields. With JavaScript disabled, standard Formspree confirmation appears. Confirm the form is active in Formspree and its notification email is set to the business's monitored inbox. Submit a real test request on the published site and confirm receipt; repository review alone does not validate delivery. The form is an estimate request, not an appointment booking.
 3. Confirm the services advertised and actual service ZIP codes with the business owner. Do not add testimonials, insurance/licensing claims, or discounts unless substantiated.
 4. Test mobile layout and navigation at 320, 375, 390, 768, and 1280 px, as well as phone/email links, service preselection, and the Formspree submission on the live site.
@@ -26,9 +26,10 @@ The previous `booking.js` is legacy code and is no longer loaded by the redesign
 The site is static HTML, CSS and JavaScript; no build command required. For Netlify publish the repository root directory.
 
 ## Detailed service pages and link previews
-Six detailed service pages link from six homepage cards. Each service has a Home/Services breadcrumb, typical cleaning tasks, intended use cases, and a preselected Formspree quote CTA. Review inclusions with the business before committing to a customer. Open Graph/Twitter metadata references assets/social-preview.png for sharing on mobile; confirm the public asset is reachable and note that social apps may cache old previews. No invented reviews, metrics, qualifications, or guarantees.
+Six detailed service pages link from six homepage cards. Each service has a Home/Services breadcrumb, typical cleaning tasks, intended use cases, and a preselected Formspree quote CTA. Review inclusions with the business before committing to a customer. Open Graph/Twitter metadata references the approved public luxury banner; confirm the image is reachable and note that social apps may cache old previews. No invented reviews, metrics, qualifications, or guarantees.
 
-## Current public domain and preview
-Until `cleaningcrowned.com` is live, the canonical URLs and Open Graph preview point to `https://graceful-smakager-014814.netlify.app/`. Social image: `/assets/social-preview.png?v=5` (1200 × 630 PNG). Once the custom domain is connected and active, update canonical, `og:url`, `og:image`, `og:image:secure_url`, and `twitter:image` across all pages to the final domain and trigger a fresh social preview. Do not use the custom domain as canonical before it is active.
+## Social preview and contact details
 
-The public contact email is `cleaningcrownedvip@gmail.com`. Formspree manages the destination of quote form submissions separately; verify its recipient and notifications in the Formspree dashboard.
+The social image used by all public pages is the owner-provided luxury banner at `https://i.ibb.co/278GgjTg/Chat-GPT-Image-Sep-23-2026-11-32-47-AM.png` (1731 × 909). Social crawlers can cache prior previews. The canonical and Open Graph URLs still use the existing Netlify site; update these to `https://cleaningcrowned.com/` when the custom domain is confirmed live and canonical.
+
+The public contact email is `cleaningcrownedvip@gmail.com`, phone `+1 (551) 449-2066` (tel:+15514492066), and location `Clifton, NJ`. Formspree independently manages the destination of form notifications; verify its recipient in the Formspree dashboard. Three lightweight SVG pictograms provide matching luxury-style icons in the contact cards and site footer.
