@@ -24,3 +24,6 @@ The previous `booking.js` is legacy code and is no longer loaded by the redesign
 
 ## Development
 The site is static HTML, CSS and JavaScript; no build command required. For Netlify publish the repository root directory.
+
+## Detailed service pages and link previews
+Six detailed service pages link from six homepage cards. Each service has a Home/Services breadcrumb, typical cleaning tasks, intended use cases, and a preselected Formspree quote CTA. Review inclusions with the business before committing to a customer. Open Graph/Twitter metadata references assets/social-preview.png for sharing on mobile; confirm the public asset is reachable and note that social apps may cache old previews. No invented reviews, metrics, qualifications, or guarantees.
